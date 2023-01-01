@@ -13,8 +13,8 @@ st.markdown("<center><h1 Style=\"overflow: visible; padding-bottom: 50px; paddin
 
 selected = option_menu(
         menu_title=None,
-        options = ["Объемы", "Графики", "Stonks", "О проекте"],
-        icons = ['list', 'bar-chart-fill', 'graph-up-arrow', 'info'],
+        options = ["Объемы", "Графики", "Stonks"],
+        icons = ['list', 'bar-chart-fill', 'graph-up-arrow'],
         default_index = 0,
         orientation = "horizontal",
         styles={
@@ -33,8 +33,6 @@ if selected == "Объемы":
 elif selected == "Графики":
     get_main_graphs(coin)
 elif selected == "Stonks":
-    get_stonks(coin)
-elif selected == "О проекте":
     get_stonks(coin)
 
 hide_menu_style = """
